@@ -871,11 +871,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.HELP_TXT.format(message.from_user.mention),
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode='html'  
+            parse_mode='html'
         )
     elif query.data == "about":
         buttons= [[
