@@ -178,42 +178,7 @@ async def help(client, message):
             caption=script.HELP_TXT.format(message.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "m":
-        buttons = [[
-            InlineKeyboardButton('ᴘɪɴ ', callback_data='pin'),
-            InlineKeyboardButton('ᴄᴏʀᴏɴᴀ ', callback_data='corona'),
-            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ ', callback_data='sticker')
-            ],[
-            InlineKeyboardButton('ᴛᴛꜱ', callback_data='ttss'),
-            InlineKeyboardButton('yᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
-            InlineKeyboardButton('ᴀᴜᴅɪᴏ-ʙᴏᴏᴋ', callback_data='abook')
-            ],[
-            InlineKeyboardButton('ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('ʀᴇᴩᴏʀᴛ', callback_data='report'),
-            InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video')
-            ],[
-            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
-            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
-            InlineKeyboardButton('ꜰɪʟᴇ-ꜱᴛᴏʀᴇ', callback_data='newdata')
-            ],[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ', callback_data='sorse'),
-            InlineKeyboardButton('ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
-            ],[
-            InlineKeyboardButton('🚶‍♀️ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ 🎛️', callback_data='stats'),
-            InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.HELP_TXT.format(message.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-
-
+      
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
     if ' ' in message.text:
