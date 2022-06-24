@@ -178,6 +178,7 @@ async def help(client, message):
             caption=script.HELP_TXT.format(message.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
+        )
       
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
