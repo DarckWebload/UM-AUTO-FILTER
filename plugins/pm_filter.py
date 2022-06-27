@@ -216,6 +216,7 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📋 𝖯ᴀɢᴇ {round(int(offset) / 6) + 1} / {round(total / 6)}", callback_data="pages"),
+             InlineKeyboardButton(f"📋{round(int(offset) / 6) + 1} / {round(total / 6)}", callback_data="pages"),
              InlineKeyboardButton("𝖭ᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
@@ -1405,6 +1406,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"📋 𝖯ᴀɢᴇ 1/{round(int(total_results) / 6)}", callback_data="pages"),
+             InlineKeyboardButton(text=f"📋 1/{round(int(total_results) / 6)}", callback_data="pages"),
              InlineKeyboardButton(text="𝖭ᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
