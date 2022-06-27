@@ -1340,7 +1340,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == 'dwl':
         await query.answer("⚠️ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠️\n.......................................\n\nᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴀꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ.\n\nɪғ ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ғɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ 🤗", True)
     elif query.data == 'pk':
-        await query.answer("ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ »» ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ »» ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ »» ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴩ\n\nᴇxᴀᴍᴩʟᴇ : Dark or Dark S01E1\n\nメ ᴅᴏɴᴛ ᴜꜱᴇ ➜ !:(!;/)-_.)\n\n©️ ᴅᴡʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ", True)
+        await query.answer("ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ »» ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ »» ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ »» ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴩ\n\nᴇxᴀᴍᴩʟᴇ : Dark or Dark S01E1\n\nメ ᴅᴏɴᴛ ᴜꜱᴇ ➜ !:(!;/)-_.)\n\n©️ ᴅᴡʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ", True)
     elif query.data == 'sorse':
                 await query.answer("ᴛʜɪs ʙᴏᴛ ɴᴏᴛ ᴀ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴩʀᴏᴊᴇᴄᴛ 🤧", True)  
 
