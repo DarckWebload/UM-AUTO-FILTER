@@ -1405,7 +1405,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"ᴘᴀɢᴇ1/{round(int(total_results) / 6)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"ᴩᴀɢᴇ)}", callback_data="pages"),
              InlineKeyboardButton(text=f"1/{round(int(total_results) / 6)}", callback_data="pages"),
              InlineKeyboardButton(text="ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{offset}")]
         )
@@ -1529,7 +1529,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="⛔ 𝖢𝗅𝗈𝗌𝖾", callback_data=f'spolling#{user}#close_spellcheck')])
-    m = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    m = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?\n\nനിങ്ങൾ ഉദ്ദേശിച്ച സിനിമ താഴെ കാണുന്നത് വല്ലതും ആണെങ്കിൽ അതിൽ ക്ലിക്ക് ചെയ്യുക", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
 
