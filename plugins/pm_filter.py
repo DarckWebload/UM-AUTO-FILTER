@@ -215,7 +215,7 @@ async def next_page(bot, query):
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"ᴘᴀɢᴇ {round(int(offset) / 6) + 1} / {round(total / 6)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"ᴩᴀɢᴇ", callback_data="pages"),
              InlineKeyboardButton(f"{round(int(offset) / 6) + 1} / {round(total / 6)}", callback_data="pages"),
              InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
